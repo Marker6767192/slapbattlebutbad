@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #7289da;
+}
+
+.top-buttons {
+    display: flex;
+}
+
+.top-buttons .button {
+    margin: 0 10px;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Cursive', sans-serif;
+    font-size: 3em;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #7289da;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #5f73b8;
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #333;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #aaa;
+}
+
+/* Ensure the background audio is hidden */
+#background-audio {
+    display: none;
+}
